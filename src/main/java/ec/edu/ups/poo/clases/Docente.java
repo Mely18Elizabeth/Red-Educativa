@@ -2,15 +2,17 @@ package ec.edu.ups.poo.clases;
 
 import java.util.List;
 
-public class Docente {
+public class Docente extends Persona {
 
     private List<String> titulosAcademicos;
     private List<String> areasDeEscpecializacion;
 
     public Docente() {
+        super();
     }
 
     public Docente(List<String> titulosAcademicos, List<String> areasDeEscpecializacion) {
+        super();
         this.titulosAcademicos = titulosAcademicos;
         this.areasDeEscpecializacion = areasDeEscpecializacion;
     }
@@ -33,7 +35,7 @@ public class Docente {
 
     @Override
     public String toString() {
-        return "Docente:" +
+        return super.toString() +
                 "\nTítulos Académicos: " + titulosAcademicos +
                 "\nÁreas de Especialización: " + areasDeEscpecializacion;
     }
